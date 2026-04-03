@@ -33,6 +33,7 @@ Thumbs.db
 .env
 
 # Database
+db.sqlite3
 *.sqlite3
 
 # Model files (optional - large files)
@@ -43,3 +44,9 @@ Thumbs.db
 # Coverage reports
 .coverage
 htmlcov/
+
+# Static files (CRITICAL)
+staticfiles/
+
+# Map files (VERY LARGE)
+*.map
