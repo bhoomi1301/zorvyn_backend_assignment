@@ -1,3 +1,5 @@
+import os
+
 """
 Django settings for finance_backend project.
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-=ttlfa8rzsmomlqx=69y2!3us&mb6uu49ozxq6nwccvna*tei)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -139,3 +141,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
